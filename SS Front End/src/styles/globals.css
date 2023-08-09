@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: "TT Commons";
+  src: url("/public/fonts/TT-COMMONS/TTCommons-Regular.ttf");
+} */
+
+body {
+  /* font-family: "TT Commons"; */
+  color: rgb(var(--foreground-rgb));
+  background: "#FAFAFA";
+}
+
+.pdf-canvad > canvas {
+  width: 400px !important;
+}
+
+.matrixHome {
+  transform: matrix(0.97, 0.14, 0.25, 0.99, 0, 0);
+}
+.matrixPackages {
+  transform: matrix(0.98, -0.14, -0.18, 0.99, 0, 0);
+}
+
+#payment-form {
+  border: #f6f9fc solid 1px;
+  border-radius: var(--radius);
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 30px 50px -20px rgb(50 50 93 / 25%),
+    0 30px 60px -30px rgb(0 0 0 / 30%);
+}
+
+#messages {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
+  display: none; /* hide initially, then show once the first message arrives */
+  background-color: #0a253c;
+  color: #00d924;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: var(--radius);
+  font-size: 0.7em;
+}
+.file-viewer-style {
+  border: 10px solid green;
+  width: 100% !important;
+  height: 100% !important;
+}
